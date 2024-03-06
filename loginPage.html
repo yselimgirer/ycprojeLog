@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="Assets/css/shop-style.css" />
+  </head>
+
+  <body>
+    <header class="fixed top0 bgWhite width100 top0">
+      <!-- Header içeriği buraya eklenmiş -->
+    </header>
+
+    <div class="LoginMain flex align-center justifyCenter height100vh ">
+      <div class="main-inner width100 relative flex" id="main-inner">
+        <div
+          class="loginSide absolute width100 flex align-center overflowHidden"
+          id="backSide"
+        >
+          <div class="LoginSide_inner1 flex column justifyCenter gap8 height100">
+            <h1 class="login-header">Giriş yap</h1>
+            <div class="login-form">
+              <form class="flex column gap10">
+                <div class="form-group flex column">
+                  <input
+                    type="email"
+                    class="login-form"
+                    id="loginEmail"
+                    placeholder="E-Mail"
+                  />
+                </div>
+                <div class="form-group flex column">
+                  <input
+                    type="password"
+                    class="login-form"
+                    id="loginPassword"
+                    placeholder="Şifre"
+                  />
+                </div>
+                <button type="submit" class="btn login-btn">GİRİŞ YAP</button>
+                <div class="help flex column space-around">
+                  <p>
+                    <a href="#">Şifremi Unuttum</a>
+                  </p>
+                  <p></p>
+                  <p>
+                    Üye olmadan verilen siparişlerin takibi için
+                    <a href="#">tıklayınız.</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <button
+              class="login-btn btn displayNone"
+              id="mobileLoginBtn"
+            >
+              Kayıt olmak için tıklayın.
+            </button>
+          </div>
+
+          <div
+            class="LoginSide_inner2 flex column align-center justifyCenter height100 gap10"
+          >
+            <h2 class="login-header">Merhaba</h2>
+            <p>
+              Cazip fırsatlardan haberdar olmak ve alışverişe hemen başlamak
+              için kaydolun. ​
+            </p>
+            <button
+              type="submit"
+              class="btn signUp-btn"
+              id="signUp-btn_before"
+            >
+              KAYIT OL
+            </button>
+          </div>
+        </div>
+        <div
+          class="loginSide absolute width100 flex align-center overflowHidden row-reverse FrontSide"
+          id="FrontSide"
+        >
+          <div
+            class="LoginSide_inner1 flex column justifyCenter gap8 height100"
+          >
+            <h1 class="login-header">Kayıt Ol</h1>
+            <div class="login-form">
+              <form class="flex column gap10">
+                <div class="form-group flex column">
+                  <input
+                    type="email"
+                    class="login-form"
+                    id="signUpEmail"
+                    placeholder="E-Mail"
+                  />
+                </div>
+                <div class="form-group flex column">
+                  <input
+                    type="password"
+                    class="login-form"
+                    id="signUpPassword"
+                    placeholder="Şifre"
+                    required
+                    minlength="7"
+                    minlength="64"
+                  />
+                  <label for="signUpPassword">
+                    <span class="password-info-text"
+                      >Şifreniz
+                      <span class="text-bold">en az 7 karakter </span> ve
+                      <span class="text-bold">en fazla 64 karakter </span>
+                      olmalı, harf ve rakam içermelidir.</span
+                    >
+                  </label>
+                </div>
+                <div class="form-group flex column">
+                  <input
+                    type="password"
+                    class="login-form"
+                    id="confirmPassword"
+                    placeholder="Şifre Tekrar"
+                    required
+                    minlength="7"
+                    minlength="64"
+                  />
+                </div>
+                <div class="form-group flex column">
+                  <input
+                    type="text"
+                    class="login-form"
+                    id="firstName"
+                    placeholder="İsim"
+                  />
+                </div>
+                <div class="form-group flex column">
+                  <input
+                    type="text"
+                    class="login-form"
+                    id="lastName"
+                    placeholder="Soyad"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn login-btn"
+                  id="signUp-Btn"
+                >
+                  Kayıt Ol
+                </button>
+              </form>
+            </div>
+            <div class="mobileTurn">
+              <p class="or pd10">Veya</p>
+              <button
+                class="btn login-btn mgAuto"
+                id="mobileSignUp-Btn"
+              >
+                GİRİŞ YAP
+              </button>
+            </div>
+          </div>
+          <div
+            class="LoginSide_inner2 flex column align-center justifyCenter height100 gap10"
+          >
+            <h2 class="login-header">Merhaba</h2>
+            <p>
+              Eğer bir hesaba sahipsen giriş yapabilirsin. ​
+            </p>
+            <button
+              type="submit"
+              class="btn signUp-btn"
+              id="signin-btn_before"
+            >
+              GİRİŞ YAP
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/2ad7499cdc.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="Assets/js/loginScript.js"></script>
+</html>
